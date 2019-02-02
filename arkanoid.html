@@ -28,8 +28,11 @@
 
         let x = canvas.width / 2;
         let y = canvas.height - 30;
-        let dx = 2;
-        let dy = -2;
+
+        let speed = 3;
+
+        let dx = speed;
+        let dy = -speed;
 
         let ballRadius = 10;
 
@@ -184,8 +187,8 @@
                     else {
                         x = canvas.width / 2;
                         y = canvas.height - 30;
-                        dx = 2;
-                        dy = -2;
+                        dx = speed;
+                        dy = -speed;
                         paddleX = (canvas.width - paddleWidth) / 2;
                     }
                 }

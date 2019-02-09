@@ -22,7 +22,7 @@
 
 <body>
     <canvas id="myCanvas" width="480" height="320"></canvas>
-    <p id="debug"></p>
+    <p id="debug">Debug</p>
     <script>
         let canvas = document.getElementById("myCanvas");
         let ctx = canvas.getContext("2d");
@@ -96,7 +96,7 @@
                 }
             }
             let elem = document.getElementById("debug");
-            elem.innerHTML = "paddle X: " + paddleX;
+            elem.innerHTML = "Paddle X: " + paddleX;
         }
 
         function touchMoveHandler(e) {
